@@ -6,7 +6,13 @@
 
 //enqueue scripts and styles *use production assets. Dev assets are located in  /css and /js
 function loadup_scripts() {
+    wp_enqueue_script( 'slick-js', get_template_directory_uri().'/js/slick.min.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_script( 'sidr-js', get_template_directory_uri().'/js/jquery.sidr.min.js', array('jquery'), '1.0.0', true );
 	wp_enqueue_script( 'theme-js', get_template_directory_uri().'/js/mesh.js', array('jquery'), '1.0.0', true );
+
+     wp_enqueue_style( 'slick-css', get_template_directory_uri().'/css/slick.css', true );
+    wp_enqueue_style( 'slick-theme-css', get_template_directory_uri().'/css/slick-theme.css', true );
+    wp_enqueue_style( 'sidr-css', get_template_directory_uri().'/css/jquery.sidr.bare.css', true );
 }
 add_action( 'wp_enqueue_scripts', 'loadup_scripts' );
 
@@ -26,7 +32,8 @@ add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call usi
 register_nav_menus(
     array(
         'main_nav' => 'Header and breadcrumb trail heirarchy',
-        'social_nav' => 'Social menu used throughout'
+        'social_nav' => 'Social menu used throughout',
+        'footer_nav' => 'Footer navigation heirarchy'
     )
 );
 

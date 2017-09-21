@@ -33,39 +33,50 @@
 </head>
 
 <body <?php body_class(); ?>>
- 
+	<div class="container page-wrap">
+		<!-- <div class="content-wrap" style="margin:0 15px 15px 15px; border:1px solid #c9c0b9;"> -->
 	<header>
-		<div class="container">
+		
 
-			<div class="columns-12">
+			<div class="row"><!-- columns-12 -->
 				<div class="logo">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<!-- <h1 class="site-title"> -->
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="Benedum Foundation Logo, Click here to return to the homepage">
+						</a>
+					<!-- </h1> -->
 				</div>
-				<nav class="main-navigation">
-					<?php if(has_nav_menu('main_nav')){
-								$defaults = array(
-									'theme_location'  => 'main_nav',
-									'menu'            => 'main_nav',
-									'container'       => false,
-									'container_class' => '',
-									'container_id'    => '',
-									'menu_class'      => 'menu',
-									'menu_id'         => '',
-									'echo'            => true,
-									'fallback_cb'     => 'wp_page_menu',
-									'before'          => '',
-									'after'           => '',
-									'link_before'     => '',
-									'link_after'      => '',
-									'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-									'depth'           => 0,
-									'walker'          => ''
-								); wp_nav_menu( $defaults );
-							}else{
-								echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
-							} ?>
-				</nav>
+				<div class="gateway">
+					<div class="site-search row">
+						<div class="search-container">
+							<?php get_template_part('partials/searchform')?>	
+						</div>
+					</div>
+					<nav class="main-navigation">
+						<?php if(has_nav_menu('main_nav')){
+									$defaults = array(
+										'theme_location'  => 'main_nav',
+										'menu'            => 'main_nav',
+										'container'       => false,
+										'container_class' => '',
+										'container_id'    => 'primary_nav',
+										'menu_class'      => 'menu',
+										'menu_id'         => 'primarynav',
+										'echo'            => true,
+										'fallback_cb'     => 'wp_page_menu',
+										'before'          => '',
+										'after'           => '',
+										'link_before'     => '',
+										'link_after'      => '',
+										'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+										'depth'           => 0,
+										'walker'          => ''
+									); wp_nav_menu( $defaults );
+								}else{
+									echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
+								} ?>
+					</nav>
 			</div>
 
-		</div>
+		<!-- </div> -->
 	</header>

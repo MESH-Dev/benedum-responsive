@@ -1,0 +1,1038 @@
+//1) Global styles {benedum_styles.css} - Pre 2017 WP Migration
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #c9c0b9;
+	color: #000;
+	border: 0;
+	margin: 0 auto;
+	padding: 0 auto;
+	//text-align: center;
+	font-family: Georgia, "Times New Roman", serif;
+	//font-size: 100%;
+	height: 100%;
+}
+
+img{
+	max-width:100%;
+	height:auto;
+}
+
+main{
+	min-height:100%;
+}
+
+.container{
+
+	&.page-wrap{
+		background:$white;
+		-webkit-box-shadow: 10px 10px 13px 0px rgba(148,143,148,0.4);
+		-moz-box-shadow: 10px 10px 13px 0px rgba(148,143,148,0.4);
+		box-shadow: 10px 10px 13px 0px rgba(148,143,148,0.4);
+		min-height:100%;
+		margin-top:40px;
+	}
+	
+}
+
+// #topshadow {
+// 	width: 1000px;
+// 	height: 50px;
+// 	background: url(../images/topshadow.png) 0 0 no-repeat;
+// 	margin: 0 auto;
+// }
+
+// #wrappershadow {
+// 	width: 1000px;
+// 	min-height: 100%;
+// 	background: url(../images/wrappershadow2.png) 0 0 repeat-y;
+// 	margin: 0 auto;
+// }
+
+/* for Internet Explorer */
+/*\*/
+// * html #wrappershadow {
+// 	height: 100%;
+// }
+/**/
+
+#wrapper_outer, 
+.content-wrap {
+	/*background: #fff url(../images/topshadow.png) 0 0 no-repeat;*/
+	position: relative; /* Fixes IE background problem */
+	margin: 0 auto;
+	margin-top: -10px;
+	color: #000;
+	//width: 940px;
+	padding-bottom: 20px;
+	//text-align: left;
+	/*border-top: 10px solid #fff;
+	padding-top: 0;
+	padding-left: 20px;*/
+	min-height: 100%;
+	margin:0 15px 15px 15px; 
+	border-right:1px solid #c9c0b9;
+	border-left:1px solid #c9c0b9;
+	border-bottom:1px solid #c9c0b9;
+}
+
+p {
+	border: 0;
+	margin: 0 0 1.5em 0;
+	padding: 0;
+	line-height: 1.4em;
+}
+
+img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+.page-title{
+	background-color:#f1efed;
+	padding-bottom:1em;
+	margin:6em 0 4em 0;
+	h1{
+		text-transform:uppercase;
+		color:white;
+		font-size:8em;
+		letter-spacing:.01em;
+		font-family:$helvetica;
+	    line-height: .75;
+    	font-weight: 300;
+    	padding-left:15px;
+	}
+	
+}
+
+#maincontent a, 
+#maincontent_nophoto a, 
+#maincontent_nophoto_notopmargin a, 
+#largeintro a {
+	text-decoration: underline !important;
+	color: $ben_blueLagoon !important; 
+}
+
+#maincontent a:hover, 
+#maincontent_nophoto a:hover, 
+#maincontent_nophoto_notopmargin a:hover, 
+#largeintro a:hover {
+	color: #000 !important;
+}
+
+a.pdf {
+	color: #000;
+	background: url(../images/pdf_icon.png) 0 0 no-repeat;
+	padding-left: 16px;
+}
+
+a.pdf:hover {
+	text-decoration: underline;
+}
+
+// ul, li {
+// 	margin-left: 0;
+// 	padding-left: 0;
+// }
+
+// #search {
+// 	float: right;
+// 	margin: 20px 20px 0 0;
+// }
+
+.callout{
+	font-family:$georgia;
+	font-size:2em;
+	text-align: left;
+	margin-top:40px;
+	&.inner{
+		color:$ben_lightBlue;
+	}
+}
+
+
+/*start logo, prev/next arrow div*/
+
+
+h1 {
+	margin: 0;
+}
+
+h1 a {
+	float: left;
+	background: url(../images/logo.png) 0 0 no-repeat;
+	position: absolute;
+	top: -20px;
+	left: 0px;
+	display: block;
+	width: 165px;
+	height: 165px;
+	padding: 0;
+	border: 0;
+	text-indent: -9999px; 
+	text-decoration: none;
+	outline: none;
+	z-index: 50;
+}
+
+#printinglogo {
+	display: none;
+}
+
+.twocolumn {
+	width: 46%;
+	margin-right: 3%;
+	margin-top: 0;
+	float: left;
+}
+
+
+
+#whatwefund {
+	display: none;
+}
+
+
+.nojava {
+	display: none;
+}
+
+#jsalert {
+	color: #FF0000;
+	float: left;
+	margin-top: 2em;
+}
+
+
+#paperweight {
+	position: relative;
+	clear: both;
+}
+
+.cushycms {} //This class tells the CMS that the content is editable
+
+
+#level2photo {
+	margin: 175px 20px 0 -20px;
+	padding-bottom: auto;
+	padding-top: 30px;
+	float: left;
+	position: relative;
+}
+
+#level2photo p {
+	font-size: 0.8em;
+	font-style: italic;
+	color: #fff;
+	background-color: #c58830;
+	opacity: .7;
+	width: 280px;
+	padding: 30px 20px 20px 20px;
+	margin: -20px 0 0 20px;
+	z-index: 50;
+	position: relative;
+
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	-khtml-opacity: 0.7;
+}
+
+.farleft {
+	display: block;
+	border-bottom: 3px solid #fff;
+}
+
+.attribute {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: .85em;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+
+#googlemap {
+	float: left;
+	margin: 0 20px 50px 0;
+}
+
+
+
+#maincontent {
+	padding: 1px 100px 20px 0;
+	margin: 305px 0 0 360px;
+	display: block;
+}
+
+#maincontent_nophoto {
+	padding: 1px 100px 20px 0;
+	margin: 305px 0 0 190px;
+	display: block;
+}
+
+#maincontent_nophoto_notopmargin {
+	padding: 1px 100px 20px 0;
+	margin: 0 0 0 190px;
+	display: block;
+	clear: both;
+}
+
+h2 {
+	font-size: 1.25em;
+	line-height: 1.35em;
+	font-weight: normal;
+	color: $ben_blueLagoon;
+	margin: 0 0 .5em 0;
+}
+
+h3 {
+	font-size: 1.25em;
+	line-height: 1.35em;
+	font-weight: normal;
+	color: #000;
+	margin: 0 0 1em 0;
+}
+
+.heading {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: .675em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	margin-right: .25em;
+}
+
+#maincontent ul, #maincontent_nophoto ul {
+	margin-left: 20px;
+}
+
+#maincontent li, #maincontent_nophoto li {
+	margin-bottom: .75em;
+	line-height: 1.4em;
+}
+
+#maincontent blockquote {
+	margin: 0;
+	padding-left: 60px;
+	background: url(../images/quote.png) 0 0 no-repeat;
+}
+
+#maincontent blockquote p {
+	font-size: .85em;
+	line-height: 1.65em;
+}
+
+#maincontent_nophoto img, #maincontent img {
+	float: left;
+	margin: 0.2em 20px 1em 0;
+}
+
+#maincontent_nophoto p img, #maincontent p img {
+	float: left;
+	margin: 5px 20px 1em 0;
+}
+
+
+
+
+
+
+// p a:link, p a:visited, li a:link, li a:visited {
+// 	color: $ben_blueLagoon;
+// }
+
+p a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+#credit {
+	clear: both;
+	margin: 0 0 -.5em 0;
+	padding-top: 4em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: .7em;
+}
+
+//--------------------------------------
+
+//3) Homepage Styles {benedum_styles_home.css}
+
+// #homeimage {
+// 	float: left;
+// 	margin: 15px 0 0 -20px;
+// 	position: relative;
+// 	z-index: 0;
+// }
+
+// #subnav_about, #subnav_programs, #subnav_apply, #subnav_grants, #subnav_resources {
+// 	display: none;
+// }
+
+// #primarynav li:hover ul {
+// 	/*background: #FFF !important;*/
+// 	background: rgba(255, 255, 255, 0.9) !important;
+// }
+/*start main content div*/
+
+// #maincontent {
+// 	background-color: #fff;
+// 	padding: 1px 30px 0 205px !important;
+// 	margin: 305px 0 0 0 !important;
+// 	display: block;
+// }
+
+p#IntroText {
+	font-size: 1.4em;
+	line-height: 1.5em;
+	font-weight: normal;
+	color: #00728a;
+	float: left;
+	margin: 30px 0 0 0;
+	padding-right: 50px;
+}
+
+p#IntroText a:link, p#IntroText a:visited {
+	color: #00728a;
+	text-decoration: underline;
+}
+
+p#IntroText a:hover, p#IntroText a:active {
+	color: #B00049;
+	text-decoration: underline;
+}
+
+.recentnews {
+	// width: 150px;
+	background-color: $ben_lightYellow;
+	float: left;
+	padding:15px 15px 10px 15px;
+	margin:25px 15px 0 15px; 
+	width:90%;
+	// padding-top: 15px;
+	// padding-left: 15px;
+	// padding-right: 15px;
+	// padding-bottom: 10px;
+	// margin-top: 25px;
+	// margin-left:15px;
+	// text-align:left;
+
+	h2{
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		font-size: 1.5em;
+		color: #a04f14;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		padding-bottom: 2px;
+		border-bottom: 1px solid #a04f14;
+		margin-top: 5px;
+	}
+
+	a{
+		margin: .5em 0 .75em 0;
+		padding: 0;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: normal;
+		//font-size: 1.2em;
+		line-height: 1.4em;
+		color: $ben_brown;
+	}
+
+	ul{
+		li{
+			list-style-type: none;
+			a{
+				font-size:1.2em;
+			}
+
+		}
+	}
+
+	p{
+		a{
+			font-family: Helvetica, Arial, sans-serif;
+			//font-size: 1em;
+			color: $ben_brown;
+			text-transform: uppercase;
+			text-decoration: underline;
+			letter-spacing: .1em;
+			line-height: 3em;
+			float: left;
+			cursor:pointer;
+			&:hover,
+			&:focus,
+			&:active{
+				text-decoration: underline;
+				color: $ben_blueLagoon;
+			}
+		}
+	}
+}
+
+
+
+h3 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 0.7em;
+	color: #a04f14;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #a04f14;
+	margin-top: 5px;
+}
+
+// #recentnews p a {
+// 	font-family: Helvetica, Arial, sans-serif;
+// 	font-size: 0.6em;
+// 	color: #a04f14;
+// 	text-transform: uppercase;
+// 	text-decoration: underline;
+// 	letter-spacing: .1em;
+// 	line-height: 3em;
+// 	float: left;
+// }
+
+// #recentnews p a:hover {
+// 	text-decoration: underline;
+// 	color: #00728a;
+// }
+
+#recentnews #maincontent_nophoto p, 
+#recentnews #maincontent_nophoto img, 
+#recentnews #maincontent_nophoto ul, 
+#recentnews #maincontent_nophoto li {
+	display: none;
+}
+
+//-------------------------------------
+
+//4) Grant styles {benedum_styles_grants.css}
+#wrapper_outer {
+	background: url(../images/grants_background.png) 20px 200px no-repeat;
+}
+
+// #subnav_about, #subnav_programs, #subnav_apply, #subnav_resources {
+// 	display: none;
+// }
+
+p a {
+	color: #e38414;
+}
+
+p a:hover {
+	text-decoration: underline;
+}
+
+//-------------------------------------
+
+//5) Apply Styles {benedum_styles_apply.css}
+#wrapper_outer {
+	background: url(../images/apply_background.png) 20px 200px no-repeat;
+}
+
+#subnav_about, #subnav_programs, #subnav_grants, #subnav_resources {
+	display: none;
+}
+
+p a {
+	color: #00728a;
+}
+
+p a:hover {
+	text-decoration: underline;
+}
+//-------------------------------------
+
+//6) About Styles {benedum_styles_about.css}
+#wrapper_outer {
+	background: url(../images/about_background.png) 20px 200px no-repeat;
+}
+
+#subnav_programs, #subnav_apply, #subnav_grants, #subnav_resources {
+	display: none;
+}
+
+h3 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: .83em;
+	line-height: 1.25em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #00728a;
+	margin-bottom: .5em;
+	margin-top: 2.25em;
+	letter-spacing: .1em;
+}
+
+#news h2 {
+	border-top: 1px solid #00728a;
+	padding-top: 18px;
+	margin-top: 72px;
+}
+
+#news h2:first-child {
+	border-top: none;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+#news img {
+	max-width: 600px;
+	clear: both;
+}
+//-------------------------------------
+
+//7) Programs Styles {benedum_styles_about.css}
+#wrapper_outer {
+	background: url(../images/programs_background.png) 20px 200px no-repeat;
+}
+
+#subnav_about, #subnav_apply, #subnav_grants, #subnav_resources {
+	display: none;
+}
+
+#largeintro {
+	padding: 1px 100px 20px 0;
+	margin: 310px 0 0 297px;
+}
+
+
+#largeintro p {
+	font-size: 1.2em;
+	line-height: 1.5em;
+	font-weight: normal;
+	color: #000;
+	margin: 0 0 1.25em 0;
+}
+
+#largeintro p a {
+	color: #b00049;
+}
+
+#largeintro p a:hover {
+	text-decoration: underline;
+}
+//-------------------------------------
+
+//8) Resources Styles {benedum_styles_resources.css}
+#wrapper_outer {
+	background: url(../images/resources_background.png) 20px 200px no-repeat;
+}
+
+#subnav_about, #subnav_programs, #subnav_apply, #subnav_grants {
+	display: none;
+}
+
+#maincontent_nophoto li a:hover {
+	text-decoration: underline;
+}
+
+.twocolumn {
+	//width: 190px;
+	margin-right: 100px;
+	margin-top: 20px;
+	float: left;
+}
+
+#maincontent_nophoto .twocolumn img {
+	border: 1px solid #c9c0b9;
+	float: left;
+}
+
+#maincontent_nophoto .twocolumn img:hover {
+	border: 1px solid #6c8cc7;
+}
+
+#maincontent_nophoto .twocolumn p {
+	display: block;
+	clear: both;
+	margin-bottom: 1.25em;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 0.8em;
+}
+//-------------------------------------
+
+//9) Print styles {benedum_styles_print.css}
+@media print{
+#topshadow {
+	display: none;
+}
+
+#wrapper_outer {
+	margin: 0 auto;
+	margin-top: 0;
+	//width: 940px;
+	padding-bottom: 0;
+	height: auto;
+}
+
+#wrapper_inner, #wrapper_inner_home {
+	border: none !important;
+}
+
+h1, h1 a {
+	display: none;
+}
+
+#printinglogo {
+	display: block;
+	outline: none;
+	z-index: 50;
+}
+
+#search {
+	display: none;
+}
+
+#primarynav_div {
+	display: none;
+}
+
+#footer {
+	display: none;
+}
+
+
+/*LEVEL 2 PAGES*/
+
+#maincontent, #maincontent_nophoto {
+	margin: 0;
+}
+
+#level2subnav_div_about, #level2subnav_div_programs, #level2subnav_div_apply, #level2subnav_div_grants, #level2subnav_div_resources {
+	display: none;
+} 
+
+#level2photo, #largeintro {
+	margin-top: 0;
+}
+
+#level2photo p {
+	font-size: 0.8em;
+	font-style: italic;
+	padding: 20px;
+	margin: 0;
+	z-index: 50;
+	border: none;
+	color: #000;
+	background-color: none;
+	opacity: 1;
+	//width: 320px;
+}
+}
+//------------------------------------------
+
+//IE 6 - 7 Styles?
+
+//10)__ {benedum_styles_ie6.css}
+
+/*HOME PAGE & UNIVERSAL*/
+
+#homeimage {
+	float: left;
+	margin: 9px -20px 0 -20px;
+}
+
+
+
+
+
+
+#wrapper_inner_home {
+	//width: 840px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+#wrapper_inner_home h2 {
+	padding-right: 50px;
+}
+
+
+
+
+
+#search {
+	float: right;
+	margin: 20px 10px 0 0;
+}
+
+#wrapper_inner_home #search {
+	float: right;
+	margin: 20px -40px 0 0;
+}
+
+
+
+
+
+
+
+
+#footer p {
+	margin-right: 10px;
+}
+
+#secondarynav {
+	margin-left: 10px;
+}
+
+.twocolumn {
+	//width: 42%;
+	margin-right: 3%;
+	margin-top: 0;
+	float: left;
+}
+
+
+
+
+
+#subnav_about, #subnav_programs, #subnav_apply, #subnav_grants, #subnav_resources {
+	//width: 18.5em;
+}
+
+
+
+
+
+
+/*ABOUT*/
+
+#level2photo {
+	margin-left: -21px;
+}
+
+
+
+//------------------------------------------
+
+//11) __ {benedum_styles_ie6and7.css}
+
+/*HOME PAGE & UNIVERSAL*/
+
+#homeimage {
+	margin-top: 9px;
+}
+
+
+
+
+
+#wrapper_inner_home h2 {
+	padding-right: 100px;
+}
+
+#wrapper_inner_home #recentnews h2 {
+	margin: .5em 0 0 0;
+	padding: 0;
+}
+
+// #recentnews p a {
+// 	line-height: 4em;
+// }
+
+#primarynav li {
+	padding-bottom: 6px; 
+}
+
+#primarynav_about {
+	border-top: 5px solid #8ba022;
+}
+
+#primarynav_programs {
+	border-top: 5px solid #b00049;
+}
+
+#primarynav_apply {
+	border-top: 5px solid #00728a;
+}
+
+#primarynav_grants {
+	border-top: 5px solid #faa61a;
+}
+
+#primarynav_resources {
+	border-top: 5px solid #6c8cc7;
+}
+
+#maincontent h2 {
+	margin-top: .7em;
+}
+
+#maincontent p#IntroText {
+	margin-top: -160px;
+}
+
+
+
+#maincontent .twocolumn {
+	margin-top: .7em;
+}
+
+
+
+#secondarynav li a {
+	letter-spacing: 0;
+}
+
+#recentnews h3 {
+	margin-bottom: -0.25em;
+}
+
+
+
+
+
+/*LEVEL 2*/
+
+#maincontent, #maincontent_nophoto {
+	padding-top: 10px;
+}
+
+#maincontent {
+	margin-top: 175px;
+}
+
+#largeintro {
+	margin-top: 193px;
+}
+
+#level2photo {
+	margin-top: 170px;
+}
+
+#maincontent h3 {
+	margin-top: 5px;
+}
+
+
+
+
+
+
+
+#subnav_about, #subnav_programs, #subnav_apply, #subnav_grants, #subnav_resources {
+	margin: 7px 0 0 0;
+}
+
+#subnav_about li, #subnav_programs li, #subnav_apply li, #subnav_grants li, #subnav_resources li {
+	margin-bottom: -.1em;
+}
+
+#subnav_about li a, #subnav_programs li a, #subnav_apply li a, #subnav_grants li a, #subnav_resources li a {
+	line-height: 1em;
+}
+
+//------------------------------------------
+
+//Carousel
+
+.carousel{
+	height:600px;
+	// margin-top:-10px;
+	//width:100%;
+	// width:calc(100%+15);
+	cursor:pointer;
+	//margin-left:-16px; //16px to account for border @ 1px
+
+	&:hover,
+	&:active,
+	&:focus{
+		.caption{
+			text-decoration:underline;
+		}
+	}
+	.panel{
+		height:600px;
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position:center center;
+		position:relative;
+		//width:calc(100% + 16px);
+		.caption{
+			position:absolute;
+			right:0;
+			bottom:0;
+			height:150px;
+			background-color:rgba(0,0,0,.5);
+			font-size:1.5em;
+			color:$white;
+			font-weight: bold;
+			padding:20px;
+			width:35%;
+
+			span.title{
+			text-transform:uppercase;
+			color:$ben_yellow;
+			}
+		}
+	}
+}
+
+button.slick-next,
+button.slick-prev{
+	position:absolute;
+	left:-99999px;
+}
+
+//Searchform
+
+#searchform{
+	//border-bottom:1px solid #c9c0b9;
+	input,
+	button{
+		display:inline-block;
+		float:left;
+	}
+
+	input{
+		border:none;
+		border-bottom:1px solid #c9c0b9;
+		font-size:1.2em;
+	}
+
+	button{
+		border:none;
+		padding:9px 12px;
+		border-bottom:1px solid #c9c0b9;
+
+		&:hover,
+		&:focus,
+		&:active{
+			img{
+				opacity:.7;
+			}
+			
+		}
+	}
+}
+
+//Accessibility
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

@@ -1,0 +1,335 @@
+header{
+	height:130px;
+	position:relative;
+}
+
+/*start primary navigation*/
+
+.logo,
+.gateway{
+	// display:inline-block;
+	// float:left;
+}
+
+.gateway{
+	//width:70%;
+	margin-left:200px;
+}
+
+.logo{
+	margin-top:-15px;
+	margin-left:15px;
+	margin-right:20px;
+	position:absolute;
+	left:0;
+	z-index:10;
+}
+
+.site-search{
+	//text-align:right;
+	padding:20px 0;
+	position:relative;
+	height:80px;
+	.search-container{
+		position: absolute;
+		right:40px;
+		width:200px;
+	}
+}
+
+// #primarynav_div {
+// 	margin: 75px 0 0 190px;
+// }
+
+
+#primarynav {
+	margin: 0;
+
+	@media only screen and ($bp-smaller-than-tablet){
+		display:none;
+	}
+
+	li{
+		float: left;
+		list-style: none;
+		position:relative;
+		padding:5px 7px;
+
+		&:hover,
+		&:focus,
+		&:active{
+
+			a{color:$white;}
+
+			.sub-menu{
+				display: block;
+				z-index: 40;
+				border: 1px solid #c9c0b9;
+				//padding: 5px 7px 7px 7px;
+				background: #FFF;
+				box-shadow: 2px 2px 2px rgba(166, 152, 136, 0.5);
+				left:0;
+			}
+		}
+
+		.sub-menu{
+		clear: both;
+		list-style: none;
+		margin: 0;
+		padding:0;
+		//padding: 6px 8px 6px 8px;
+		border: 0;
+		min-width: 160px;
+		/*height: 160px;*/
+		position: absolute;
+		left:-99999px;
+		z-index: 30;
+			li{
+				display:block;
+				width:100%;
+				text-align:left;
+
+				&:first-child{
+					margin-top:1em;
+				}
+			}
+		}
+
+		&.about{
+			border-top: 5px solid $ben_green;
+			//background-color: #fff;
+			//float: left;
+			.sub-menu{
+				border-color: $ben_green; 
+				a{
+					color: $ben_green; 
+					&:hover,
+					&:focus,
+					&:active{
+						color: $ben_green;
+						text-decoration:underline;
+					}
+				}
+			}
+			&:hover,
+			&:focus,
+			&:active{
+				background-color: $ben_green;
+				// color: #fff;
+				// text-decoration:none;
+			}
+		}
+
+		&.programs{
+			border-top: 5px solid $ben_red;
+			//background-color: #fff;
+			//float: left;
+			.sub-menu{
+				border-color: $ben_red; 
+				a{color: $ben_red; 
+					&:hover,
+					&:focus,
+					&:active{
+						color: $ben_red; 
+						text-decoration:underline;
+					}
+				}
+			}
+			&:hover,
+			&:focus,
+			&:active{
+				background-color: $ben_red;
+				//color: #fff;
+			}
+		}
+
+		&.apply{
+			border-top: 5px solid $ben_blueLagoon;
+			//background-color: #fff;
+			//float: left;
+			.sub-menu{
+				border-color: $ben_blueLagoon;
+				a{
+					color: $ben_blueLagoon; 
+					&:hover,
+					&:focus,
+					&:active{
+						color: $ben_blueLagoon;
+						text-decoration:underline;
+					}
+				}
+			}
+			&:hover,
+			&:focus,
+			&:active{
+				background-color: $ben_blueLagoon;
+				color: #fff;
+			}
+		}
+
+		&.grants{
+			border-top: 5px solid $ben_yellow;
+			//background-color: #fff;
+			//float: left;
+			.sub-menu{
+				border-color: $ben_yellow; 
+				//color: $ben_yellow;
+				a{
+					color: $ben_yellow; 
+					&:hover,
+					&:focus,
+					&:active{
+						color: $ben_yellow;
+						text-decoration: underline;
+					}
+				}
+			}
+			&:hover,
+			&:focus,
+			&:active{
+				background-color: $ben_yellow;
+				color: #fff;
+			}
+		}
+		&.resources{
+			border-top: 5px solid $ben_lightBlue;
+			//background-color: #fff;
+			//float: left;
+			.sub-menu{
+				border-color: $ben_lightBlue;
+				a{
+					color: $ben_lightBlue;
+					&:hover,
+					&:focus,
+					&:active{
+						color: $ben_lightBlue;
+						text-decoration:underline;
+					}
+				}
+			}
+			&:hover,
+			&:focus,
+			&:active{
+				background-color: $ben_lightBlue;
+				color: #fff;
+			}
+		}
+
+		a{
+			padding: 6px 10px; 
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 1.2em;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: .1em;
+			color: #655b52;
+			&:hover,
+			&:focus,
+			&:active{
+				color:$white;
+				text-decoration:none;
+			}
+		}
+	}
+
+
+}
+
+//__ End primary navigation
+
+//2) Level 2 styles {benedum_styles_level2.css}
+
+/*SUBNAV MENUS*/
+
+// #subnav_about, 
+// #subnav_programs,
+// #subnav_apply, 
+// #subnav_grants, 
+// #subnav_resources {
+// 	clear: both;
+// 	list-style: none;
+// 	margin: 30px 0 0 0;
+// 	padding: 6px 8px 6px 8px;
+// 	border: 0;
+// 	min-width: 160px;
+// 	/*height: 160px;*/
+// 	position: absolute;
+// 	z-index: 30;
+// }
+
+/* hover menus */
+
+#primarynav li:hover ul {
+	display: block;
+	z-index: 40;
+	border: 1px solid #c9c0b9;
+	//padding: 5px 7px 7px 7px;
+	background: #FFF;
+	box-shadow: 2px 2px 2px rgba(166, 152, 136, 0.5);
+}
+
+#primarynav .current:hover ul {
+	border: none;
+	padding: 6px 8px 8px 8px;
+	background: transparent;
+	box-shadow: none;
+}
+
+// #primarynav:hover #subnav_about { border-color: $ben_green; }
+// #primarynav:hover #subnav_programs { border-color: $ben_red; }
+// #primarynav:hover #subnav_apply { border-color: $ben_blueLagoon; }
+// #primarynav:hover #subnav_grants { border-color: $ben_yellow; }
+// #primarynav:hover #subnav_resources { border-color: $ben_lightBlue; }
+
+#primarynav #nav_about:hover #primarynav_about { color: #FFF; background-color: $ben_green; }
+#primarynav #nav_programs:hover #primarynav_programs { color: #FFF; background-color: $ben_red; }
+#primarynav #nav_apply:hover #primarynav_apply { color: #FFF; background-color: $ben_blueLagoon; }
+#primarynav #nav_grants:hover #primarynav_grants { color: #FFF; background-color: $ben_yellow; }
+#primarynav #nav_resources:hover #primarynav_resources { color: #FFF; background-color: $ben_lightBlue; }
+
+/* end hover menus */
+
+#subnav_about li, #subnav_programs li, #subnav_apply li, #subnav_grants li, #subnav_resources li {
+	clear: both;
+	letter-spacing: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#subnav_about li a, #subnav_programs li a, #subnav_apply li a, #subnav_grants li a, #subnav_resources li a {
+	background: none;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: .75em;
+	line-height: 1.75em;
+	font-weight: normal;
+	text-transform: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#subnav_about li a {
+	color: $ben_green;
+}
+
+#subnav_programs li a {
+	color: $ben_red;
+}
+
+#subnav_apply li a {
+	color: $ben_blueLagoon;
+}
+
+#subnav_grants li a {
+	color: $ben_yellow;
+}
+
+#subnav_resources li a {
+	color: $ben_lightBlue;
+}
+
+#subnav_about li a:hover, #subnav_programs li a:hover, #subnav_apply li a:hover, #subnav_grants li a:hover, #subnav_resources li a:hover, #subnav_about li a.current, #subnav_programs li a.current, #subnav_apply li a.current, #subnav_grants li a.current, #subnav_resources li a.current {
+	font-weight: bold;
+	text-decoration: underline;
+}
