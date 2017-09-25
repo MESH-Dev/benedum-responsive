@@ -3,7 +3,7 @@
 //Add all custom functions, hooks, filters, ajax etc here
 
 include('functions/start.php');
-
+include('functions/cpt.php');
 include('functions/clean.php');
 
 //Custon wp-admin logo
@@ -16,5 +16,16 @@ function my_custom_login_logo() {
 		    </style>';
 }
 
+
+//Add/Change excerpt
+function new_excerpt_more( $more ) {
+    if (is_home()){
+       return '...  <div class="read-more"><a class="cta-link" href="' . get_permalink( get_the_ID() ) . '"><span>' . __( 'Read More', 'your-text-domain' ) . '</a></span></div>'; 
+    }else{
+  
+  return '... <div class="read-more"><a href="'.get_permalink( get_the_ID() ).'">Read More</a></div>';
+}
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
 
 ?>

@@ -29,7 +29,7 @@ get_header(); ?>
 		</a>
 		<?php endwhile; endif;?>
 	</div>
-	<div class="">
+	<div class="page-content">
 		<div class="row">
 			<div class="columns-3">
 				<div class="recentnews">
@@ -56,7 +56,7 @@ get_header(); ?>
 					</li>
 					<?php endwhile; endif; wp_reset_postdata();?>
 					</ul>
-					<p><a href="<?php //echo get_post_type_archive_link('post'); ?>">Go To News Page >></a></p>
+					<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>/news">Go To News Page >></a></p>
 				</div>
 			</div>
 			<div class="columns-9">

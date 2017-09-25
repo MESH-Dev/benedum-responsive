@@ -53,6 +53,7 @@
 						</div>
 					</div>
 					<nav class="main-navigation">
+						<div class="sidr-trigger hide">MENU &#9776;</div>
 						<?php if(has_nav_menu('main_nav')){
 									$defaults = array(
 										'theme_location'  => 'main_nav',
