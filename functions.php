@@ -3,8 +3,9 @@
 //Add all custom functions, hooks, filters, ajax etc here
 
 include('functions/start.php');
-include('functions/cpt.php');
 include('functions/clean.php');
+include('functions/cpt.php');
+
 
 //Custon wp-admin logo
 function my_custom_login_logo() {

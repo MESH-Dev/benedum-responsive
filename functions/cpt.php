@@ -60,7 +60,7 @@ function grants_CPT() {
 	register_post_type( 'grants', $args );
 
 }
-add_action( 'init', 'grants_CPT', 0 );
+//add_action( 'init', 'grants_CPT', 0 );
 
 //Taxonomies ---------------------------------------------
 
@@ -101,7 +101,7 @@ function program_area_tax() {
 	register_taxonomy( 'program_area', array( 'grants' ), $args );
 
 }
-add_action( 'init', 'program_area_tax', 0 );
+//add_action( 'init', 'program_area_tax', 0 );
 
 // Register Region Served Custom Taxonomy
 function region_served_tax() {
@@ -140,7 +140,7 @@ function region_served_tax() {
 	register_taxonomy( 'region_served', array( 'grants' ), $args );
 
 }
-add_action( 'init', 'region_served_tax', 0 );
+//add_action( 'init', 'region_served_tax', 0 );
 
 // Register Year Custom Taxonomy
 function year_tax() {
@@ -179,6 +179,6 @@ function year_tax() {
 	register_taxonomy( 'year', array( 'grants' ), $args );
 
 }
-add_action( 'init', 'year_tax', 0 );
+//add_action( 'init', 'year_tax', 0 );
 
 ?>
