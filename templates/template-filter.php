@@ -9,7 +9,7 @@ get_header(); ?>
 		<div class="row">
 			<div class="page-title">
 				<h1>
-					<?php the_title(); ?>
+					<?php the_title(); ?>....
 				</h1>
 			</div>
 
@@ -17,8 +17,22 @@ get_header(); ?>
 				<div class="the-content">
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<?php the_content(); ?>
-				<?php endwhile; ?>
-			</div>
+
+					<div id="results" class="filter-results">
+						Results Area
+						<?php //do_shortcode('[searchandfilter id="778" show="results"]'); ?>
+					</div>
+
+		 
+
+					<?php endwhile; ?>
+					<div class="nav-previous alignleft pagination "><?php next_posts_link( 'Older posts' ); ?></div>
+					<div class="nav-next alignright  pagination "><?php previous_posts_link( 'Newer posts' ); ?></div>
+				</div>
+
+
+
+<!-- 
 				<div class="filters row">
 					<div class="filter search">
 						<label for="searchFilter" class="sr-only">Search Available Grants</label>
@@ -88,8 +102,8 @@ get_header(); ?>
 						<p> <span class="title region-tax">Region Served: </span> Pennsylvania</p>
 						<p> <span class="title amount">Amount Awarded: </span> $50,000.00</p>
 					</div>
-				</div>
-			<?php //get_sidebar(); ?>
+				</div> -->
+		 
 		</div>
 
 		</div>
