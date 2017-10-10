@@ -22,7 +22,7 @@ get_header(); ?>
 					<?php  the_content(); ?>
 					<?php 
 							//shortcode to show grant filter facets using search and filter plugin
-							echo do_shortcode('[searchandfilter id="778"]'); 
+							echo do_shortcode('[searchandfilter id="687"]'); 
 
 					 ?>
 
@@ -33,7 +33,7 @@ get_header(); ?>
 						//shortcode to display search and filter AJAX results. 
 						//Template found in theme at /search-filter/results.php
 						//This must stay wihing the #results div.
-						echo do_shortcode('[searchandfilter id="778" show="results"]'); ?>
+						echo do_shortcode('[searchandfilter id="687" show="results"]'); ?>
  
 					</div>
 
