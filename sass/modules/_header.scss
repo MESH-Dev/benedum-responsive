@@ -119,9 +119,9 @@ header{
 			//background-color: #fff;
 			//float: left;
 			.sub-menu{
-				border-color: $ben_green; 
+				border-color: $ben_green;
 				a{
-					color: $ben_green; 
+					color: $ben_green;
 					&:hover,
 					&:focus,
 					&:active{
@@ -144,12 +144,12 @@ header{
 			//background-color: #fff;
 			//float: left;
 			.sub-menu{
-				border-color: $ben_red; 
-				a{color: $ben_red; 
+				border-color: $ben_red;
+				a{color: $ben_red;
 					&:hover,
 					&:focus,
 					&:active{
-						color: $ben_red; 
+						color: $ben_red;
 						text-decoration:underline;
 					}
 				}
@@ -169,7 +169,7 @@ header{
 			.sub-menu{
 				border-color: $ben_blueLagoon;
 				a{
-					color: $ben_blueLagoon; 
+					color: $ben_blueLagoon;
 					&:hover,
 					&:focus,
 					&:active{
@@ -191,10 +191,10 @@ header{
 			//background-color: #fff;
 			//float: left;
 			.sub-menu{
-				border-color: $ben_orange; 
+				border-color: $ben_orange;
 				//color: $ben_orange;
 				a{
-					color: $ben_orange; 
+					color: $ben_orange;
 					&:hover,
 					&:focus,
 					&:active{
@@ -235,7 +235,7 @@ header{
 		}
 
 		a{
-			padding: 6px 10px; 
+			padding: 6px 10px;
 			font-family: Helvetica, Arial, sans-serif;
 			font-size: 1.2em;
 			font-weight: bold;
@@ -271,6 +271,58 @@ header{
 	}
 }
 
+.sidr{
+	padding: 40px 0;
+	background-color: #eee;
+	box-shadow: inset 2px 0px 5px #999;
+	.sidr-inner{
+		ul{
+			margin: 0;
+		}
+		li{
+			list-style: none;
+			margin: 0;
+			border-top: 1px solid gray;
+			&:last-of-type{
+				border-bottom: 1px solid gray;
+			}
+			a{
+				padding: 20px 0px 20px 20px;
+				display: block;
+				color: $black;
+				margin: 0;
+				font-size: 1.4rem;
+			}
+			&.sidr-class-menu-item-has-children{
+				> a{
+					&::after{
+						content: ' +'
+					}
+				}
+				ul{
+					&.sidr-class-sub-menu{
+						// height: 0px;
+						li{
+							a{
+								padding-left: 40px;
+								&::before{
+									content: '- '
+								}
+							}
+						}
+					}
+				}
+				&.open{
+					ul.sidr-class-sub-menu{
+						// height: auto;
+					}
+				}
+			}
+		}
+	}
+}
+
+
 //__ End primary navigation
 
 //2) Level 2 styles {benedum_styles_level2.css}
@@ -303,10 +355,10 @@ header{
 
 /* end hover menus */
 
-// #subnav_about li, 
-// #subnav_programs li, 
-// #subnav_apply li, 
-// #subnav_grants li, 
+// #subnav_about li,
+// #subnav_programs li,
+// #subnav_apply li,
+// #subnav_grants li,
 // #subnav_resources li {
 // 	clear: both;
 // 	letter-spacing: 0;

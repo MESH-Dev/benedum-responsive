@@ -17,6 +17,20 @@ jQuery(document).ready(function($){
   	cssEase: 'ease-in-out'
   });
 
+  $('.sidr-trigger').sidr({
+     name: 'sidr-main',
+     source: '#primarynav',
+     side: 'right'
+    });
+
+    $('ul.sidr-class-sub-menu').hide();
+
+    $('li.sidr-class-menu-item-has-children > a').click(function(e){
+      e.preventDefault();
+      $(this).toggleClass('open');
+      $(this).siblings('.sidr-class-sub-menu').slideToggle();
+   });
+
 //Highlight.js__from site pre 2017 WP Migration
 
   /**************************************************************************
@@ -39,7 +53,7 @@ jQuery(document).ready(function($){
 function extractPageName(hrefString)
 {
 	var arr = hrefString.split('/');
-	return  (arr.length<2) ? hrefString : arr[arr.length-2].toLowerCase() + arr[arr.length-1].toLowerCase();               
+	return  (arr.length<2) ? hrefString : arr[arr.length-2].toLowerCase() + arr[arr.length-1].toLowerCase();
 }
 
 function setActiveMenu(arr, crtPage)

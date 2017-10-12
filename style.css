@@ -1074,6 +1074,47 @@ header {
   text-decoration: underline;
 }
 
+/* line 274, sass/modules/_header.scss */
+.sidr {
+  padding: 40px 0;
+  background-color: #eee;
+  box-shadow: inset 2px 0px 5px #999;
+}
+/* line 279, sass/modules/_header.scss */
+.sidr .sidr-inner ul {
+  margin: 0;
+}
+/* line 282, sass/modules/_header.scss */
+.sidr .sidr-inner li {
+  list-style: none;
+  margin: 0;
+  border-top: 1px solid gray;
+}
+/* line 286, sass/modules/_header.scss */
+.sidr .sidr-inner li:last-of-type {
+  border-bottom: 1px solid gray;
+}
+/* line 289, sass/modules/_header.scss */
+.sidr .sidr-inner li a {
+  padding: 20px 0px 20px 20px;
+  display: block;
+  color: #000000;
+  margin: 0;
+  font-size: 1.4rem;
+}
+/* line 298, sass/modules/_header.scss */
+.sidr .sidr-inner li.sidr-class-menu-item-has-children > a::after {
+  content: " +";
+}
+/* line 306, sass/modules/_header.scss */
+.sidr .sidr-inner li.sidr-class-menu-item-has-children ul.sidr-class-sub-menu li a {
+  padding-left: 40px;
+}
+/* line 308, sass/modules/_header.scss */
+.sidr .sidr-inner li.sidr-class-menu-item-has-children ul.sidr-class-sub-menu li a::before {
+  content: "- ";
+}
+
 /*SUBNAV MENUS*/
 /* hover menus */
 /* end hover menus */
