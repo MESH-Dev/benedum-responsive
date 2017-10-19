@@ -17,7 +17,7 @@ header{
 .gateway{
 	//width:70%;
 	//margin-left:200px;
-	margin-left:16.66667%;
+	margin-left:17%;
 	@media only screen and ($bp-smaller-than-tablet){
 		margin-left:145px;
 	}
@@ -42,6 +42,11 @@ header{
 	padding:20px 0;
 	position:relative;
 	height:80px;
+	@media screen and ($bp-smaller-than-phablet){
+		padding: 0px;
+		position: inherit;
+		height: auto;
+	}
 	.search-container{
 		position: absolute;
 		right:40px;
@@ -49,6 +54,10 @@ header{
 		@media only screen and ($bp-smaller-than-tablet){
 			right:1.5em;
 			//left:15px;
+		}
+		@media screen and ($bp-smaller-than-phablet){
+			right: 0;
+			top: 90px;
 		}
 	}
 }
@@ -64,7 +73,7 @@ header{
 #primarynav {
 	margin: 0;
 
-	@media only screen and ($bp-smaller-than-tablet){
+	@media only screen and ($bp-smaller-than-desktop){
 		display:none;
 	}
 
@@ -88,6 +97,11 @@ header{
 				background: #FFF;
 				box-shadow: 2px 2px 2px rgba(166, 152, 136, 0.5);
 				left:0;
+				li{
+					a{
+						padding: 0px;
+					}
+				}
 			}
 		}
 
@@ -107,7 +121,7 @@ header{
 				display:block;
 				width:100%;
 				text-align:left;
-
+				padding: 5px 14px;
 				&:first-child{
 					margin-top:1em;
 				}
@@ -245,7 +259,7 @@ header{
 			&:hover,
 			&:focus,
 			&:active{
-				color:$white;
+				// color:$white;
 				text-decoration:none;
 			}
 		}
@@ -263,11 +277,16 @@ header{
 	font-weight:400;
 	position:absolute;
 	right:1.5em;
+	cursor: pointer;
 
 	&:hover,
 	&:focus,
 	&:active{
 		text-decoration:underline;
+	}
+
+	@media screen and ($bp-smaller-than-phablet){
+		top: 40px;
 	}
 }
 

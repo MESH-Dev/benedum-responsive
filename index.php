@@ -9,7 +9,7 @@
 					News<?php //the_title(); ?>
 				</h1>
 			</div>
-			<div class="columns-10 offset-by-2">
+			<div class="columns-10 offset-by-2 listings">
 
 
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
