@@ -36,20 +36,20 @@
 	<div class="container page-wrap">
 		<!-- <div class="content-wrap" style="margin:0 15px 15px 15px; border:1px solid #c9c0b9;"> -->
 	<header>
-		
+
 
 			<div class="row"><!-- columns-12 -->
 				<div class="logo">
 					<!-- <h1 class="site-title"> -->
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="Benedum Foundation Logo, Click here to return to the homepage">
+							<img src="<?php bloginfo('template_directory'); ?>/img/BenedumFoundationLogo_rgb.jpg" alt="Benedum Foundation Logo, Click here to return to the homepage">
 						</a>
 					<!-- </h1> -->
 				</div>
 				<div class="gateway">
 					<div class="site-search row">
 						<div class="search-container">
-							<?php get_template_part('partials/searchform')?>	
+							<?php get_template_part('partials/searchform')?>
 						</div>
 					</div>
 					<nav class="main-navigation">

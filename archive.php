@@ -1,4 +1,4 @@
-<?php 
+<?php
 get_header(); ?>
 
 <main id="content" class="interior">
@@ -15,17 +15,17 @@ get_header(); ?>
 				<div class="the-content">
 					<?php
 					if(have_posts()) : while(have_posts()) : the_post();
-				 
+
 					    echo '<div class="entry-content">';
 					    the_content();
 					    echo '</div>';
-						endwhile; 
+						endwhile;
 					endif; ?>
-	
- 
-		 
+
+
+
 				</div>
-			</div>	
+			</div>
 		</div>
 	</div>
 

@@ -79,3 +79,74 @@ label > .label-body {
   margin-left: .5rem;
   font-weight: normal;
 }
+
+//Search Form: Sidebar, no results search, etc
+#sidebar{
+}
+form.search-form{
+   border-bottom: 1px solid $light-grey;
+   position: relative;
+   label{
+      display: inline-block;
+      width: 50%;
+      span{
+         font-weight: 400;
+         font-size: 1.2rem;
+      }
+      input[type="search"]{
+         border: none;
+         width: 100%;
+      }
+   }
+   input[type="submit"]{
+      padding: 0 10px;
+      font-family: helvetica, arial, sans-serif;
+      border: none;
+      background-color: $light-grey;
+      float: right;
+   }
+}
+
+//Search and Filter Grants
+form.searchandfilter{
+   margin-bottom: 40px;
+   ul{
+      li{
+         &.sf-field-search{
+            label{
+               display: block;
+            }
+         }
+         input{
+            &.sf-input-text{
+               width: 100%;
+               border: 2px solid $light-grey;
+            }
+            &.sf-input-number{
+               border: 2px solid $light-grey;
+            }
+         }
+         li{
+            display: inline-block;
+            padding: 10px;
+         }
+      }
+   }
+}
+
+.sf-field-reset, .pagination{
+   a{
+      background-color: $light-grey;
+      font-family: helvetica, arial, sans-serif;
+      color: $black;
+      padding: 10px;
+      font-size: 1.2rem;
+      font-weight: 600;
+   }
+   .nav-next, .nav-previous{
+      display: inline-block;
+      a{
+         line-height: 44px;
+      }
+   }
+}
