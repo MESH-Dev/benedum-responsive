@@ -1960,100 +1960,104 @@ button.slick-prev {
   }
 }
 
-/* line 1200, sass/modules/_modules.scss */
+/* line 1199, sass/modules/_modules.scss */
 #searchform input,
 #searchform button {
   display: inline-block;
-  float: left;
 }
-/* line 1206, sass/modules/_modules.scss */
+/* line 1204, sass/modules/_modules.scss */
 #searchform input {
+  float: left;
   border: none;
-  border-bottom: 1px solid #c9c0b9;
   font-size: 1.2em;
 }
-/* line 1212, sass/modules/_modules.scss */
+/* line 1210, sass/modules/_modules.scss */
 #searchform button {
+  float: right;
   border: none;
   padding: 9px 12px;
-  border-bottom: 1px solid #c9c0b9;
 }
-/* line 1220, sass/modules/_modules.scss */
+/* line 1218, sass/modules/_modules.scss */
 #searchform button:hover img, #searchform button:focus img, #searchform button:active img {
   opacity: .7;
 }
 
-/* line 1230, sass/modules/_modules.scss */
+/* line 1226, sass/modules/_modules.scss */
+.search-container {
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 1232, sass/modules/_modules.scss */
 body.search .container .results-container, .filter-results .container .results-container {
   padding: 40px;
 }
-/* line 1233, sass/modules/_modules.scss */
+/* line 1235, sass/modules/_modules.scss */
 body.search h1, .filter-results h1 {
   font-size: 3rem;
   color: #00728a;
   margin-bottom: 40px;
 }
-/* line 1238, sass/modules/_modules.scss */
+/* line 1240, sass/modules/_modules.scss */
 body.search h2, .filter-results h2 {
   font-family: helvetica, arial, sans-serif;
   font-weight: bold;
   color: #b00049;
   margin: 0;
 }
-/* line 1243, sass/modules/_modules.scss */
+/* line 1245, sass/modules/_modules.scss */
 body.search h2 a, .filter-results h2 a {
   color: #b00049;
 }
-/* line 1247, sass/modules/_modules.scss */
+/* line 1249, sass/modules/_modules.scss */
 body.search .post, .filter-results .post {
   margin-bottom: 40px;
 }
 
-/* line 1252, sass/modules/_modules.scss */
+/* line 1254, sass/modules/_modules.scss */
 .search-filter-results {
   font-size: 1.2rem;
 }
 
-/* line 1257, sass/modules/_modules.scss */
+/* line 1259, sass/modules/_modules.scss */
 #sidebar {
   padding: 10px;
 }
 @media screen and (max-width: 750px) {
-  /* line 1257, sass/modules/_modules.scss */
+  /* line 1259, sass/modules/_modules.scss */
   #sidebar {
     padding: 0px;
   }
 }
-/* line 1262, sass/modules/_modules.scss */
+/* line 1264, sass/modules/_modules.scss */
 #sidebar h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
-/* line 1266, sass/modules/_modules.scss */
+/* line 1268, sass/modules/_modules.scss */
 #sidebar ul {
   margin-bottom: 2.4rem;
 }
-/* line 1268, sass/modules/_modules.scss */
+/* line 1270, sass/modules/_modules.scss */
 #sidebar ul li a {
   font-size: 1.2rem;
   color: #000000;
 }
-/* line 1271, sass/modules/_modules.scss */
+/* line 1273, sass/modules/_modules.scss */
 #sidebar ul li a:visited {
   color: #777;
 }
 
-/* line 1279, sass/modules/_modules.scss */
+/* line 1281, sass/modules/_modules.scss */
 .single #content {
   padding: 40px;
 }
 
-/* line 1284, sass/modules/_modules.scss */
-.comment-respond textarea {
+/* line 1286, sass/modules/_modules.scss */
+.comment-respond textarea, .comment-respond input[type="text"], .comment-respond input[type="email"], .comment-respond input[type="url"] {
   max-width: 100%;
   border: 1px solid #ccc;
 }
-/* line 1288, sass/modules/_modules.scss */
+/* line 1290, sass/modules/_modules.scss */
 .comment-respond input[type="submit"] {
   border: none;
   background-color: #ccc;
@@ -2061,23 +2065,23 @@ body.search .post, .filter-results .post {
   font-family: helvetica, arial, sans-serif;
 }
 
-/* line 1297, sass/modules/_modules.scss */
+/* line 1299, sass/modules/_modules.scss */
 .comments-body a, .comments-body b, .comments-body span.says {
   font-size: 1.2rem;
 }
 
-/* line 1304, sass/modules/_modules.scss */
+/* line 1306, sass/modules/_modules.scss */
 .hide {
   display: none;
 }
 @media only screen and (max-width: 1060px) {
-  /* line 1304, sass/modules/_modules.scss */
+  /* line 1306, sass/modules/_modules.scss */
   .hide {
     display: block;
   }
 }
 
-/* line 1313, sass/modules/_modules.scss */
+/* line 1315, sass/modules/_modules.scss */
 .sr-only, .search-form .screen-reader-text {
   position: absolute;
   width: 1px;

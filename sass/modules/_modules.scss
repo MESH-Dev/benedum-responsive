@@ -1196,23 +1196,21 @@ main.filter{
 //Searchform
 
 #searchform{
-	//border-bottom:1px solid #c9c0b9;
 	input,
 	button{
 		display:inline-block;
-		float:left;
 	}
 
 	input{
+		float: left;
 		border:none;
-		border-bottom:1px solid #c9c0b9;
 		font-size:1.2em;
 	}
 
 	button{
+		float: right;
 		border:none;
 		padding:9px 12px;
-		border-bottom:1px solid #c9c0b9;
 
 		&:hover,
 		&:focus,
@@ -1223,6 +1221,10 @@ main.filter{
 
 		}
 	}
+}
+
+.search-container{
+	border-bottom: 1px solid $light-grey;
 }
 
 //Search Results & Filter results
@@ -1281,7 +1283,7 @@ body.search, .filter-results{
 }
 
 .comment-respond{
-	textarea{
+	textarea, input[type="text"], input[type="email"], input[type="url"]{
 		max-width: 100%;
 		border: 1px solid $light-grey;
 	}
