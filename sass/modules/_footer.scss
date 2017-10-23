@@ -20,6 +20,7 @@ footer {
 	}
 
 	a{
+		color: $black;
 		&:hover,
 		&:focus,
 		&:active{
@@ -53,7 +54,7 @@ footer {
 		// 	a{
 		// 		padding:1em 1em 1em 0;
 		// 	}
-			
+
 		// }
 
 		&:last-child{
