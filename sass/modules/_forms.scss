@@ -110,12 +110,20 @@ form.search-form{
 //Search and Filter Grants
 form.searchandfilter{
    margin-bottom: 40px;
+   h4{
+      font-size: 1.8rem;
+      font-weight: 600;
+   }
    ul{
       li{
          &.sf-field-search{
             label{
                display: block;
             }
+         }
+         label{
+            font-size: 1.4rem;
+            font-weight: 400;
          }
          input{
             &.sf-input-text{
