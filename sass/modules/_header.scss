@@ -51,6 +51,7 @@ header{
 		position: absolute;
 		right:40px;
 		width:200px;
+		border-bottom: 1px solid $light-grey;
 		@media only screen and ($bp-smaller-than-tablet){
 			right:1.5em;
 			//left:15px;
@@ -58,6 +59,14 @@ header{
 		@media screen and ($bp-smaller-than-phablet){
 			right: 0;
 			top: 80px;
+			width: 100%;
+			border: none;
+			form#searchform{
+				border-bottom: 1px solid $light-grey;
+				display: inline-block;
+				float: right;
+				margin-right: 10px;
+			}
 		}
 	}
 }
