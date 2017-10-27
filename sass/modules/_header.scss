@@ -57,7 +57,7 @@ header{
 		}
 		@media screen and ($bp-smaller-than-phablet){
 			right: 0;
-			top: 90px;
+			top: 80px;
 		}
 	}
 }
@@ -68,6 +68,51 @@ header{
 
 .main-navigation{
 	position:relative;
+}
+
+.sidr-inner{
+	li{
+		&.sidr-class-about{
+			border-top: 2px solid $ben_green;
+			ul.sidr-class-sub-menu{
+				li{
+					border-top: 1px solid $ben_green;
+				}
+			}
+		}
+		&.sidr-class-programs{
+			border-top: 2px solid $ben_red;
+			ul.sidr-class-sub-menu{
+				li{
+					border-top: 1px solid $ben_red;
+				}
+			}
+		}
+		&.sidr-class-apply{
+			border-top: 2px solid $ben_blueLagoon;
+			ul.sidr-class-sub-menu{
+				li{
+					border-top: 1px solid $ben_blueLagoon;
+				}
+			}
+		}
+		&.sidr-class-grants{
+			border-top: 2px solid $ben_orange;
+			ul.sidr-class-sub-menu{
+				li{
+					border-top: 1px solid $ben_orange;
+				}
+			}
+		}
+		&.sidr-class-resources{
+			border-top: 2px solid $ben_lightBlue;
+			ul.sidr-class-sub-menu{
+				li{
+					border-top: 1px solid $ben_lightBlue;
+				}
+			}
+		}
+	}
 }
 
 #primarynav {
@@ -294,51 +339,56 @@ header{
 	padding: 40px 0;
 	background-color: #eee;
 	box-shadow: inset 2px 0px 5px #999;
-	.sidr-inner{
-		ul{
-			margin: 0;
+}
+
+.sidr-inner{
+	ul{
+		margin: 0;
+	}
+	li{
+		list-style: none;
+		margin: 0;
+		border-top: 1px solid gray;
+		padding-top: 20px;
+		&:last-of-type{
+			border-bottom: 1px solid gray;
 		}
-		li{
-			list-style: none;
-			margin: 0;
-			border-top: 1px solid gray;
-			padding-top: 20px;
-			&:last-of-type{
-				border-bottom: 1px solid gray;
-			}
-			a{
-				display: inline-block;
-				padding-left: 20px;
-				margin-bottom: 20px;
-				color: $black;
-				font-size: 1.4rem;
-			}
-			&.sidr-class-menu-item-has-children{
-				> a{
-					&::after{
-						content: ' +'
-					}
+		a{
+			font-family: helvetica, arial, sans-serif;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: .1em;
+			display: inline-block;
+			padding-left: 20px;
+			margin-bottom: 20px;
+			color: #655b52;
+			font-size: 1.2rem;
+		}
+		&.sidr-class-menu-item-has-children{
+			> a{
+				&::after{
+					content: ' +'
 				}
-				ul{
-					&.sidr-class-sub-menu{
-						// height: 0px;
-						li{
-							padding: 0px;
-							a{
-								display: block;
-								padding: 20px 0px 20px 40px;
-								margin: 0px;
-								&::before{
-									content: '- '
-								}
+			}
+			ul{
+				&.sidr-class-sub-menu{
+					// height: 0px;
+					li{
+						padding: 0px;
+						a{
+							display: block;
+							padding: 20px 0px 20px 40px;
+							margin: 0px;
+							&::before{
+								content: '- '
 							}
 						}
 					}
 				}
-				&.open{
-					ul.sidr-class-sub-menu{
-						// height: auto;
-					}
+			}
+			&.open{
+				ul.sidr-class-sub-menu{
+					// height: auto;
 				}
 			}
 		}

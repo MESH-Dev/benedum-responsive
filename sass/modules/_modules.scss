@@ -661,6 +661,14 @@ h3 {
 }
 
 .blog{
+	.listings{
+		@media screen and ($bp-smaller-than-tablet){
+			overflow-x: hidden;
+		}
+	}
+}
+
+.blog{
 	#content{
 		.listings{
 			@media screen and ($bp-smaller-than-tablet){
@@ -1205,13 +1213,17 @@ main.filter{
 	}
 
 	input{
-		float: left;
 		border:none;
+		display: inline-block;
 		font-size:1.2em;
 	}
 
+	.focus-bg{
+		display: inline-block;
+	}
+
 	button{
-		float: right;
+		display: inline-block;
 		border:none;
 		padding:9px 12px;
 
@@ -1301,6 +1313,14 @@ body.search, .filter-results{
 .comments-body{
 	a, b, span.says{
 		font-size: 1.2rem;
+	}
+}
+
+//Contact Google Map
+iframe.contact-gmap{
+	width: 400px;
+	@media screen and ($bp-smaller-than-phablet){
+		width: 100%;
 	}
 }
 

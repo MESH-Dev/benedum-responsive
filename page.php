@@ -4,6 +4,7 @@
 	$image = get_field('image');
 	$image_url = $image['sizes']['large'];
 	$image_caption = get_field('image_caption');
+	$page_callout = get_field('callout_text');
 ?>
 <main id="content" class="interior">
 
@@ -15,9 +16,9 @@
 				</h1>
 			</div>
 			<div class="page-content <?php if($image != ''){ echo 'no-pad';} ?>">
-				
-			<?php 
-				
+
+			<?php
+
 
 				if($image != ''){
 				?>
@@ -35,11 +36,12 @@
 				<?php } ?>
 
 			<div <?php if($image != ''){ echo 'class="columns-8"';}else{ echo 'class="columns-10 offset-by-2"';}?> >
+				<!-- <//?php if($page_callout != '') ?> -->
 				<div class="page-callout">
-					<h2><?php echo get_field('callout_text'); ?>/<h2>
+					<h2><?php echo get_field('callout_text'); ?><h2>
 				</div>
-			
-				<?php 
+
+				<?php
 					if (have_rows('page_content')):
 						$col_cnt = 0;
 							while(have_rows('page_content')):the_row();
