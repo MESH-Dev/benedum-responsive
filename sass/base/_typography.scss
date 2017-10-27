@@ -46,5 +46,12 @@ main{
 	}
    a{
       color: $ben_blueLagoon;
+      word-break: break-all;
+   }
+}
+
+body.single{
+   a{
+      color: $ben_blueLagoon;
    }
 }

@@ -110,6 +110,12 @@ p {
 	line-height: 1.4em;
 }
 
+main.interior{
+	ul li:last-of-type{
+		margin-bottom: 1.5em;
+	}
+}
+
 img {
 	margin: 0;
 	padding: 0;
@@ -1055,7 +1061,9 @@ footer {
 	// width:calc(100%+15);
 	cursor:pointer;
 	//margin-left:-16px; //16px to account for border @ 1px
-
+	@media screen and ($bp-smaller-than-tablet){
+		height: 300px;
+	}
 	&:hover,
 	&:active,
 	&:focus{
@@ -1070,6 +1078,10 @@ footer {
 		background-position:center center;
 		position:relative;
 		//width:calc(100% + 16px);
+		@media screen and ($bp-smaller-than-tablet){
+			height: 300px;
+			background-position: top right;
+		}
 		.caption{
 			position:absolute;
 			right:0;

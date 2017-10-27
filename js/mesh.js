@@ -14,7 +14,22 @@ jQuery(document).ready(function($){
 	  //speed: 1000,
 	  slidesToShow: 1,
 	  fade: true,
-  	cssEase: 'ease-in-out'
+  	cssEase: 'ease-in-out',
+   responsive:[
+      {
+         breakpoint: 750,
+         settings: {
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+            //speed: 1000,
+            slidesToShow: 1,
+            fade: true,
+            cssEase: 'ease-in-out',
+         }
+      }
+   ]
   });
 
   $('.sidr-trigger').sidr({
@@ -25,10 +40,10 @@ jQuery(document).ready(function($){
 
     $('ul.sidr-class-sub-menu').hide();
 
-    $('li.sidr-class-menu-item-has-children > a').click(function(e){
-      e.preventDefault();
-      $(this).toggleClass('open');
-      $(this).siblings('.sidr-class-sub-menu').slideToggle();
+    $('li.sidr-class-menu-item-has-children').click(function(e){
+      // e.preventDefault();
+      // $(this).toggleClass('open');
+      $(this).children('.sidr-class-sub-menu').slideToggle();
    });
 
 //Highlight.js__from site pre 2017 WP Migration
