@@ -1094,13 +1094,13 @@ footer {
 			position:absolute;
 			right:0;
 			bottom:0;
-			height:100px;
 			background-color:rgba(0,0,0,.5);
 			font-size:1.5em;
 			color:$white;
 			font-weight: bold;
 			padding:20px;
 			width:35%;
+			word-wrap: normal;
 
 			@media only screen and ($bp-smaller-than-tablet){
 				//position:relative;
