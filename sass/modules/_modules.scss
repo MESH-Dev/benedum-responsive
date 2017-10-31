@@ -1100,7 +1100,7 @@ footer {
 			font-weight: bold;
 			padding:20px;
 			width:35%;
-			word-wrap: normal;
+			word-break: normal;
 
 			@media only screen and ($bp-smaller-than-tablet){
 				//position:relative;
