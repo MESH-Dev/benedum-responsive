@@ -921,7 +921,7 @@ header {
 /*start primary navigation*/
 /* line 17, sass/modules/_header.scss */
 .gateway {
-  margin-left: 17%;
+  margin-left: 19%;
 }
 @media only screen and (max-width: 750px) {
   /* line 17, sass/modules/_header.scss */
