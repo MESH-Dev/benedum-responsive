@@ -1330,6 +1330,29 @@ iframe.contact-gmap{
 
 }
 
+//Sitemap
+
+.sitemap-menu{
+	li{
+		list-style-type: none;
+		a{
+			text-transform:uppercase;
+			font-weight:bold;
+		}
+
+		.sub-menu{
+			li{
+				//list-style-type:disc;
+				a{
+					font-weight:normal;
+					text-transform:none;
+				}
+			}
+		}
+	}
+}
+
+
 //Accessibility
 .sr-only, .search-form .screen-reader-text {
   position: absolute;

@@ -2200,7 +2200,22 @@ iframe.contact-gmap {
   }
 }
 
-/* line 1334, sass/modules/_modules.scss */
+/* line 1336, sass/modules/_modules.scss */
+.sitemap-menu li {
+  list-style-type: none;
+}
+/* line 1338, sass/modules/_modules.scss */
+.sitemap-menu li a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 1346, sass/modules/_modules.scss */
+.sitemap-menu li .sub-menu li a {
+  font-weight: normal;
+  text-transform: none;
+}
+
+/* line 1357, sass/modules/_modules.scss */
 .sr-only, .search-form .screen-reader-text {
   position: absolute;
   width: 1px;

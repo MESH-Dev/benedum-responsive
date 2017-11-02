@@ -15,6 +15,7 @@
 					<?php the_title(); ?>
 				</h1>
 			</div>
+
 			<div class="page-content <?php if($image != ''){ echo 'no-pad';} ?>">
 
 			<?php
