@@ -37,10 +37,11 @@
 				<?php } ?>
 
 			<div <?php if($image != ''){ echo 'class="columns-8"';}else{ echo 'class="columns-10 offset-by-2"';}?> >
-				<!-- <//?php if($page_callout != '') ?> -->
-				<div class="page-callout">
-					<h2><?php echo get_field('callout_text'); ?><h2>
-				</div>
+				<?php if($page_callout != '') ?>
+					<div class="page-callout">
+						<h2><?php echo get_field('callout_text'); ?></h2>
+					</div>
+				<?php } ?>
 
 				<?php
 					if (have_rows('page_content')):

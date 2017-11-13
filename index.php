@@ -16,7 +16,7 @@
 
 					<h2><?php the_title(); ?></h2>
 
-					<?php the_excerpt(); ?>
+					<?php the_content(); ?>
 
 				<?php endwhile; ?>
 			</div>
