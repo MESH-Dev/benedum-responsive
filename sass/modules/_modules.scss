@@ -76,11 +76,16 @@ main{
 
 .page-callout{
 	h2{
+		span{
+			font-size:1.5em;
+			text-transform:uppercase;
+			font-family:$helvetica;
+		}
 		font-size: 2.2em;
 	    line-height: 1.35em;
 	    font-weight: normal;
 	    color: $ben_blueLagoon;
-	    margin: 0 0 2em 0;
+	    margin: 0 0 1em 0;
 
 
 	}
@@ -1077,6 +1082,7 @@ footer {
 		font-size:1.5em;
 		color:$white;
 		font-weight: bold;
+		font-style: italic;
 		padding:20px;
 		width:95%;
 		margin:-20px auto 0 auto;
