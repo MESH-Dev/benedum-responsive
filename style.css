@@ -2115,7 +2115,7 @@ button.slick-prev {
 #searchform button {
   display: inline-block;
   border: none;
-  padding: 3px 12px;
+  padding: 6px 12px;
 }
 /* line 1267, sass/modules/_modules.scss */
 #searchform button:hover img, #searchform button:focus img, #searchform button:active img {
