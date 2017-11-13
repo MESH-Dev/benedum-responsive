@@ -25,6 +25,30 @@ main{
 	min-height:100%;
 }
 
+.the-content,
+.post-body{
+	padding-right:15px;
+}
+
+.the-content{
+	ul{
+		padding-left:30px;
+		li{
+			list-style-position: outside;
+			padding-left:5px;
+		}
+	}
+
+	h2, h3, h4, h5, h6{
+		font-weight:700;
+		
+	}
+
+	h3, h4, h5, h6{
+		margin:5px 0;
+	}
+}
+
 .container{
 
 	&.page-wrap{
@@ -541,17 +565,17 @@ p a:hover {
 
 
 
-h3 {
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: bold;
-	font-size: 1.2rem;
-	color: #a04f14;
-	text-transform: uppercase;
-	letter-spacing: .1em;
-	padding-bottom: 2px;
-	border-bottom: 1px solid #a04f14;
-	margin-top: 5px;
-}
+// h3 {
+// 	font-family: Helvetica, Arial, sans-serif;
+// 	font-weight: bold;
+// 	font-size: 1.2rem;
+// 	color: #a04f14;
+// 	text-transform: uppercase;
+// 	letter-spacing: .1em;
+// 	padding-bottom: 2px;
+// 	border-bottom: 1px solid #a04f14;
+// 	margin-top: 5px;
+// }
 
 // #recentnews p a {
 // 	font-family: Helvetica, Arial, sans-serif;
@@ -662,6 +686,7 @@ h3 {
 
 .blog{
 	.listings{
+		padding-right:15px;
 		@media screen and ($bp-smaller-than-tablet){
 			overflow-x: hidden;
 		}
@@ -671,6 +696,7 @@ h3 {
 .blog{
 	#content{
 		.listings{
+			padding-right:15px;
 			@media screen and ($bp-smaller-than-tablet){
 				padding-left: 40px;
 				padding-right: 40px;
@@ -1210,6 +1236,7 @@ main.filter{
 	input,
 	button{
 		display:inline-block;
+		vertical-align: middle;
 	}
 
 	input{
@@ -1225,7 +1252,7 @@ main.filter{
 	button{
 		display: inline-block;
 		border:none;
-		padding:9px 12px;
+		padding:3px 12px;
 
 		&:hover,
 		&:focus,
@@ -1352,6 +1379,49 @@ iframe.contact-gmap{
 	}
 }
 
+//404 page
+
+.error404 #content{
+	padding: 40px;
+}
+
+.site-search{
+	//text-align:right;
+	padding:20px 0;
+	position:relative;
+	height:80px;
+	@media screen and ($bp-smaller-than-phablet){
+		padding: 0px;
+		position: inherit;
+		height: auto;
+	}
+	.search-content{
+		// position: absolute;
+		// right:40px;
+		width:200px;
+		border-bottom: 1px solid $light-grey;
+		@media only screen and ($bp-smaller-than-tablet){
+			//right:1.5em;
+			//left:15px;
+		}
+		@media screen and ($bp-smaller-than-phablet){
+			// right: 0;
+			// top: 80px;
+			// width: 100%;
+			// border: none;
+			form#searchform{
+				border-bottom: 1px solid $light-grey;
+				display: inline-block;
+				float: right;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+#searchform{
+
+}
 
 //Accessibility
 .sr-only, .search-form .screen-reader-text {

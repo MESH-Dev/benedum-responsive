@@ -5,6 +5,8 @@
 	$image_url = $image['sizes']['large'];
 	$image_caption = get_field('image_caption');
 	$page_callout = get_field('callout_text');
+
+	$parent = $post->post_parent;
 ?>
 <main id="content" class="interior">
 
@@ -12,7 +14,7 @@
 		<div class="row">
 			<div class="page-title">
 				<h1>
-					<?php the_title(); ?>
+					<?php echo get_the_title($parent); ?>
 				</h1>
 			</div>
 
@@ -37,7 +39,7 @@
 				<?php } ?>
 
 			<div <?php if($image != ''){ echo 'class="columns-8"';}else{ echo 'class="columns-10 offset-by-2"';}?> >
-				<?php if($page_callout != '') ?>
+				<?php if($page_callout != '') {?>
 					<div class="page-callout">
 						<h2><?php echo get_field('callout_text'); ?></h2>
 					</div>
@@ -59,7 +61,9 @@
 								}
 				?>
 					<div <?php echo $classes; ?> >
-						<?php echo $column; ?>
+						<div class="the-content">
+							<?php echo $column; ?>
+						</div>
 					</div>
 
 
