@@ -28,6 +28,11 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
+	
+	<?php 
+	$bugherd="false";
+	if($bugherd = 'true'){
+	?>
 	<!-- BugHerd -->
 	<script type='text/javascript'>
 		(function (d, t) {
@@ -37,6 +42,8 @@
 		  s.parentNode.insertBefore(bh, s);
 		  })(document, 'script');
 		</script>
+
+	<?php } ?>
 
 	<?php wp_head(); ?>
 
