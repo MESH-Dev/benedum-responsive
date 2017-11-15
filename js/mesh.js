@@ -46,6 +46,8 @@ jQuery(document).ready(function($){
       $(this).children('.sidr-class-sub-menu').slideToggle();
    });
 
+$('.searchandfilter .sf-field-search').append('<sup class="input-label">Search title, region, year, amount, or grant description</sup>');
+
 //Highlight.js__from site pre 2017 WP Migration
 
   /**************************************************************************

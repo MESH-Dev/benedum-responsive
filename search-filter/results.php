@@ -51,7 +51,7 @@ if ( $query->have_posts() )
 		
 		?>
 		<div class="result">
-			<h2><a href="<?php echo get_field('org_link')?>" target="_blank"><?php   the_title(); ?></a> ( <?php echo get_field('city_and_state');?>)</h2>
+			<h2><a href="<?php echo get_field('org_link')?>" target="_blank"><?php   the_title(); ?></a> (<?php echo get_field('city_and_state');?>)</h2>
 			<p>  <?php the_content(); ?></p>
 			<p> <span class="title awared-date">Date Awarded:</span> <?php echo get_field('date_awarded')?></p>
 			<p> <span class="title program-tax">Program Area:</span> <?php echo $program_display;?></p>

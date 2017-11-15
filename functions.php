@@ -17,10 +17,10 @@ function my_custom_login_logo() {
 		    </style>';
 }
 
-
+//Control the use of html in excerpts
 function wpse_allowedtags() {
     // Add custom tags to this string
-        return '<script>,<style>,<br>,<em>,<i>,<ul>,<ol>,<li>,<a>,<p>,<img>,<video>,<audio>'; 
+        return '<script>,<style>,<br>,<em>,<i>,<ul>,<ol>,<li>,<a>,<img>,<video>,<audio>'; //<p>,
     }
 
 if ( ! function_exists( 'wpse_custom_wp_trim_excerpt' ) ) : 
@@ -84,19 +84,26 @@ endif;
 remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 add_filter('get_the_excerpt', 'wpse_custom_wp_trim_excerpt'); 
 
+//Control the length of the excerpts on archive page
 function wpse_excerpt_length( $length ) {
-    return 20;
+    return 100;
 }
 add_filter( 'excerpt_length', 'wpse_excerpt_length', 999 );
 
-//Add/Change excerpt
+//Add/Change excerpt read more
 function new_excerpt_more( $more ) {
-    if (is_home()){
-       return '<div class="read-more"><a class="cta-link" href="' . get_permalink( get_the_ID() ) . '"><span>' . __( 'Read More >>', 'your-text-domain' ) . '</a></span></div>'; 
-    }else{
-  
-  return '<div class="read-more"><a href="'.get_permalink( get_the_ID() ).'">Read More >></a></div>';
-}
+	GLOBAL $post;
+	$excerpt_length = str_word_count(get_the_content($post->ID), 0);
+	//var_dump($excerpt_length);
+
+	if($excerpt_length >= 100){
+		    if (is_home()){
+		       return ' ... <div class="read-more" ><a class="cta-link" href="' . get_permalink( get_the_ID() ) . '"><span>' . __( 'Read More >>', 'your-text-domain' ) . '</a></span></div>'; 
+		    }else{
+		  
+		  return ' ... <div class="read-more"><a href="'.get_permalink( get_the_ID() ).'">Read More >></a></div>';
+		}
+	}
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
