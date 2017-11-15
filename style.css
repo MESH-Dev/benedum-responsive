@@ -1025,13 +1025,14 @@ header {
   float: left;
   list-style: none;
   position: relative;
-  padding: 5px 7px;
+  padding: 5px 7px 8px 7px;
 }
 /* line 144, sass/modules/_header.scss */
 #primarynav li:hover a, #primarynav li:focus a, #primarynav li:active a {
   color: #FFFFFF;
+  white-space: nowrap;
 }
-/* line 146, sass/modules/_header.scss */
+/* line 149, sass/modules/_header.scss */
 #primarynav li:hover .sub-menu, #primarynav li:focus .sub-menu, #primarynav li:active .sub-menu {
   display: block;
   z-index: 40;
@@ -1040,11 +1041,11 @@ header {
   box-shadow: 2px 2px 2px rgba(166, 152, 136, 0.5);
   left: 0;
 }
-/* line 156, sass/modules/_header.scss */
+/* line 159, sass/modules/_header.scss */
 #primarynav li:hover .sub-menu li a, #primarynav li:focus .sub-menu li a, #primarynav li:active .sub-menu li a {
-  padding: 0;
+  padding: 0 0 2px 0;
 }
-/* line 163, sass/modules/_header.scss */
+/* line 166, sass/modules/_header.scss */
 #primarynav li .sub-menu {
   clear: both;
   list-style: none;
@@ -1058,7 +1059,7 @@ header {
   top: 100%;
   z-index: 30;
 }
-/* line 176, sass/modules/_header.scss */
+/* line 179, sass/modules/_header.scss */
 #primarynav li .sub-menu li {
   display: block;
   width: 100%;
@@ -1066,204 +1067,204 @@ header {
   padding: 5px 14px;
   margin-bottom: 5px;
 }
-/* line 182, sass/modules/_header.scss */
+/* line 185, sass/modules/_header.scss */
 #primarynav li .sub-menu li:first-child {
   margin-top: 1em;
 }
-/* line 191, sass/modules/_header.scss */
+/* line 194, sass/modules/_header.scss */
 #primarynav li.about {
   border-top: 5px solid #8ba022;
 }
-/* line 194, sass/modules/_header.scss */
+/* line 197, sass/modules/_header.scss */
 #primarynav li.about .sub-menu {
   border-color: #8ba022;
 }
-/* line 196, sass/modules/_header.scss */
+/* line 199, sass/modules/_header.scss */
 #primarynav li.about .sub-menu a {
   color: #8ba022;
 }
-/* line 198, sass/modules/_header.scss */
+/* line 201, sass/modules/_header.scss */
 #primarynav li.about .sub-menu a:hover, #primarynav li.about .sub-menu a:focus, #primarynav li.about .sub-menu a:active {
   color: #8ba022;
   border-bottom: 2px solid #8ba022;
 }
-/* line 208, sass/modules/_header.scss */
+/* line 211, sass/modules/_header.scss */
 #primarynav li.about .sub-menu li.current_page_item a {
   color: #8ba022;
   border-bottom: 2px solid #8ba022;
 }
-/* line 214, sass/modules/_header.scss */
+/* line 217, sass/modules/_header.scss */
 #primarynav li.about:hover, #primarynav li.about:focus, #primarynav li.about:active {
   background-color: #8ba022;
 }
-/* line 222, sass/modules/_header.scss */
+/* line 225, sass/modules/_header.scss */
 #primarynav li.about.current-menu-item, #primarynav li.about.current-menu-parent {
   background-color: #8ba022;
 }
-/* line 225, sass/modules/_header.scss */
+/* line 228, sass/modules/_header.scss */
 #primarynav li.about.current-menu-item a, #primarynav li.about.current-menu-parent a {
   color: #FFFFFF;
 }
-/* line 230, sass/modules/_header.scss */
+/* line 233, sass/modules/_header.scss */
 #primarynav li.about.current-menu-item .sub-menu li a, #primarynav li.about.current-menu-parent .sub-menu li a {
   color: #8ba022;
 }
-/* line 238, sass/modules/_header.scss */
+/* line 241, sass/modules/_header.scss */
 #primarynav li.programs {
   border-top: 5px solid #b00049;
 }
-/* line 242, sass/modules/_header.scss */
+/* line 245, sass/modules/_header.scss */
 #primarynav li.programs .sub-menu {
   border-color: #b00049;
 }
-/* line 244, sass/modules/_header.scss */
+/* line 247, sass/modules/_header.scss */
 #primarynav li.programs .sub-menu a {
   color: #b00049;
 }
-/* line 245, sass/modules/_header.scss */
+/* line 248, sass/modules/_header.scss */
 #primarynav li.programs .sub-menu a:hover, #primarynav li.programs .sub-menu a:focus, #primarynav li.programs .sub-menu a:active {
   color: #b00049;
   border-bottom: 2px solid #b00049;
 }
-/* line 253, sass/modules/_header.scss */
+/* line 256, sass/modules/_header.scss */
 #primarynav li.programs .sub-menu li.current_page_item a {
   color: #b00049;
   border-bottom: 2px solid #b00049;
 }
-/* line 259, sass/modules/_header.scss */
+/* line 262, sass/modules/_header.scss */
 #primarynav li.programs:hover, #primarynav li.programs:focus, #primarynav li.programs:active {
   background-color: #b00049;
 }
-/* line 265, sass/modules/_header.scss */
+/* line 268, sass/modules/_header.scss */
 #primarynav li.programs.current-menu-item, #primarynav li.programs.current-menu-parent {
   background-color: #b00049;
 }
-/* line 268, sass/modules/_header.scss */
+/* line 271, sass/modules/_header.scss */
 #primarynav li.programs.current-menu-item a, #primarynav li.programs.current-menu-parent a {
   color: #FFFFFF;
 }
-/* line 273, sass/modules/_header.scss */
+/* line 276, sass/modules/_header.scss */
 #primarynav li.programs.current-menu-item .sub-menu li a, #primarynav li.programs.current-menu-parent .sub-menu li a {
   color: #b00049;
 }
-/* line 281, sass/modules/_header.scss */
+/* line 284, sass/modules/_header.scss */
 #primarynav li.apply {
   border-top: 5px solid #00728a;
 }
-/* line 285, sass/modules/_header.scss */
+/* line 288, sass/modules/_header.scss */
 #primarynav li.apply .sub-menu {
   border-color: #00728a;
 }
-/* line 287, sass/modules/_header.scss */
+/* line 290, sass/modules/_header.scss */
 #primarynav li.apply .sub-menu a {
   color: #00728a;
 }
-/* line 289, sass/modules/_header.scss */
+/* line 292, sass/modules/_header.scss */
 #primarynav li.apply .sub-menu a:hover, #primarynav li.apply .sub-menu a:focus, #primarynav li.apply .sub-menu a:active {
   color: #00728a;
   border-bottom: 2px solid #00728a;
 }
-/* line 297, sass/modules/_header.scss */
+/* line 300, sass/modules/_header.scss */
 #primarynav li.apply .sub-menu li.current_page_item a {
   color: #00728a;
   border-bottom: 2px solid #00728a;
 }
-/* line 303, sass/modules/_header.scss */
+/* line 306, sass/modules/_header.scss */
 #primarynav li.apply:hover, #primarynav li.apply:focus, #primarynav li.apply:active {
   background-color: #00728a;
   color: #fff;
 }
-/* line 309, sass/modules/_header.scss */
+/* line 312, sass/modules/_header.scss */
 #primarynav li.apply.current-menu-item, #primarynav li.apply.current-menu-parent {
   background-color: #00728a;
 }
-/* line 312, sass/modules/_header.scss */
+/* line 315, sass/modules/_header.scss */
 #primarynav li.apply.current-menu-item a, #primarynav li.apply.current-menu-parent a {
   color: #FFFFFF;
 }
-/* line 317, sass/modules/_header.scss */
+/* line 320, sass/modules/_header.scss */
 #primarynav li.apply.current-menu-item .sub-menu li a, #primarynav li.apply.current-menu-parent .sub-menu li a {
   color: #00728a;
 }
-/* line 325, sass/modules/_header.scss */
+/* line 328, sass/modules/_header.scss */
 #primarynav li.grants {
   border-top: 5px solid #faa61a;
 }
-/* line 329, sass/modules/_header.scss */
+/* line 332, sass/modules/_header.scss */
 #primarynav li.grants .sub-menu {
   border-color: #faa61a;
 }
-/* line 332, sass/modules/_header.scss */
+/* line 335, sass/modules/_header.scss */
 #primarynav li.grants .sub-menu a {
   color: #faa61a;
 }
-/* line 334, sass/modules/_header.scss */
+/* line 337, sass/modules/_header.scss */
 #primarynav li.grants .sub-menu a:hover, #primarynav li.grants .sub-menu a:focus, #primarynav li.grants .sub-menu a:active {
   color: #faa61a;
   border-bottom: 2px solid #faa61a;
 }
-/* line 342, sass/modules/_header.scss */
+/* line 345, sass/modules/_header.scss */
 #primarynav li.grants .sub-menu li.current_page_item a {
   color: #faa61a;
   border-bottom: 2px solid #faa61a;
 }
-/* line 348, sass/modules/_header.scss */
+/* line 351, sass/modules/_header.scss */
 #primarynav li.grants:hover, #primarynav li.grants:focus, #primarynav li.grants:active {
   background-color: #faa61a;
   color: #fff;
 }
-/* line 354, sass/modules/_header.scss */
+/* line 357, sass/modules/_header.scss */
 #primarynav li.grants.current-menu-item, #primarynav li.grants.current-menu-parent {
   background-color: #faa61a;
 }
-/* line 357, sass/modules/_header.scss */
+/* line 360, sass/modules/_header.scss */
 #primarynav li.grants.current-menu-item a, #primarynav li.grants.current-menu-parent a {
   color: #FFFFFF;
 }
-/* line 362, sass/modules/_header.scss */
+/* line 365, sass/modules/_header.scss */
 #primarynav li.grants.current-menu-item .sub-menu li a, #primarynav li.grants.current-menu-parent .sub-menu li a {
   color: #faa61a;
 }
-/* line 369, sass/modules/_header.scss */
+/* line 372, sass/modules/_header.scss */
 #primarynav li.resources {
   border-top: 5px solid #6c8cc7;
 }
-/* line 373, sass/modules/_header.scss */
+/* line 376, sass/modules/_header.scss */
 #primarynav li.resources .sub-menu {
   border-color: #6c8cc7;
 }
-/* line 375, sass/modules/_header.scss */
+/* line 378, sass/modules/_header.scss */
 #primarynav li.resources .sub-menu a {
   color: #6c8cc7;
 }
-/* line 377, sass/modules/_header.scss */
+/* line 380, sass/modules/_header.scss */
 #primarynav li.resources .sub-menu a:hover, #primarynav li.resources .sub-menu a:focus, #primarynav li.resources .sub-menu a:active {
   color: #6c8cc7;
   border-bottom: 2px solid #6c8cc7;
 }
-/* line 385, sass/modules/_header.scss */
+/* line 388, sass/modules/_header.scss */
 #primarynav li.resources .sub-menu li.current_page_item a {
   color: #6c8cc7;
   border-bottom: 2px solid #6c8cc7;
 }
-/* line 391, sass/modules/_header.scss */
+/* line 394, sass/modules/_header.scss */
 #primarynav li.resources:hover, #primarynav li.resources:focus, #primarynav li.resources:active {
   background-color: #6c8cc7;
   color: #fff;
 }
-/* line 397, sass/modules/_header.scss */
+/* line 400, sass/modules/_header.scss */
 #primarynav li.resources.current-menu-item, #primarynav li.resources.current-menu-parent {
   background-color: #6c8cc7;
 }
-/* line 400, sass/modules/_header.scss */
+/* line 403, sass/modules/_header.scss */
 #primarynav li.resources.current-menu-item a, #primarynav li.resources.current-menu-parent a {
   color: #FFFFFF;
 }
-/* line 405, sass/modules/_header.scss */
+/* line 408, sass/modules/_header.scss */
 #primarynav li.resources.current-menu-item .sub-menu li a, #primarynav li.resources.current-menu-parent .sub-menu li a {
   color: #6c8cc7;
 }
-/* line 413, sass/modules/_header.scss */
+/* line 416, sass/modules/_header.scss */
 #primarynav li a {
   padding: 6px 10px;
   font-family: Helvetica, Arial, sans-serif;
@@ -1273,12 +1274,12 @@ header {
   letter-spacing: .1em;
   color: #655b52;
 }
-/* line 421, sass/modules/_header.scss */
+/* line 424, sass/modules/_header.scss */
 #primarynav li a:hover, #primarynav li a:focus, #primarynav li a:active {
   text-decoration: none;
 }
 
-/* line 433, sass/modules/_header.scss */
+/* line 436, sass/modules/_header.scss */
 .sidr-trigger {
   color: #00728a;
   text-transform: uppercase;
@@ -1290,40 +1291,40 @@ header {
   right: 1.5em;
   cursor: pointer;
 }
-/* line 444, sass/modules/_header.scss */
+/* line 447, sass/modules/_header.scss */
 .sidr-trigger:hover, .sidr-trigger:focus, .sidr-trigger:active {
   text-decoration: underline;
 }
 @media screen and (max-width: 550px) {
-  /* line 433, sass/modules/_header.scss */
+  /* line 436, sass/modules/_header.scss */
   .sidr-trigger {
     top: 40px;
   }
 }
 
-/* line 455, sass/modules/_header.scss */
+/* line 458, sass/modules/_header.scss */
 .sidr {
   padding: 40px 0;
   background-color: #eee;
   box-shadow: inset 2px 0px 5px #999;
 }
 
-/* line 462, sass/modules/_header.scss */
+/* line 465, sass/modules/_header.scss */
 .sidr-inner ul {
   margin: 0;
 }
-/* line 465, sass/modules/_header.scss */
+/* line 468, sass/modules/_header.scss */
 .sidr-inner li {
   list-style: none;
   margin: 0;
   border-top: 1px solid gray;
   padding-top: 20px;
 }
-/* line 470, sass/modules/_header.scss */
+/* line 473, sass/modules/_header.scss */
 .sidr-inner li:last-of-type {
   border-bottom: 1px solid gray;
 }
-/* line 473, sass/modules/_header.scss */
+/* line 476, sass/modules/_header.scss */
 .sidr-inner li a {
   font-family: helvetica, arial, sans-serif;
   font-weight: bold;
@@ -1335,21 +1336,21 @@ header {
   color: #655b52;
   font-size: 1.2rem;
 }
-/* line 486, sass/modules/_header.scss */
+/* line 489, sass/modules/_header.scss */
 .sidr-inner li.sidr-class-menu-item-has-children > a::after {
   content: " +";
 }
-/* line 493, sass/modules/_header.scss */
+/* line 496, sass/modules/_header.scss */
 .sidr-inner li.sidr-class-menu-item-has-children ul.sidr-class-sub-menu li {
   padding: 0px;
 }
-/* line 495, sass/modules/_header.scss */
+/* line 498, sass/modules/_header.scss */
 .sidr-inner li.sidr-class-menu-item-has-children ul.sidr-class-sub-menu li a {
   display: block;
   padding: 20px 0px 20px 40px;
   margin: 0px;
 }
-/* line 499, sass/modules/_header.scss */
+/* line 502, sass/modules/_header.scss */
 .sidr-inner li.sidr-class-menu-item-has-children ul.sidr-class-sub-menu li a::before {
   content: "- ";
 }
