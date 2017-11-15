@@ -7,7 +7,6 @@
 <head>
 
 	<meta charset="utf-8">
-	<meta name="developer" content="<?php echo $_SERVER['SERVER_ADMIN'] ?>">
 	<title><?php bloginfo('name'); ?></title>
 
 	<!-- Meta / og: tags -->
@@ -90,5 +89,5 @@
 					</nav>
 			</div>
 
-		<!-- </div> -->
+		</div>
 	</header>

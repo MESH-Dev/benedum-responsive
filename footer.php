@@ -37,6 +37,6 @@
 </script>
 
 <?php wp_footer(); ?>
-<!-- </div> --><!--ends surrounding container-->
+ </div><!--ends surrounding container-->
 </body>
 </html>
