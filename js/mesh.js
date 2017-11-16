@@ -34,16 +34,39 @@ jQuery(document).ready(function($){
 
   $('.sidr-trigger').sidr({
      name: 'sidr-main',
-     source: '#primarynav',
+     source: '.main-navigation',
      side: 'right'
     });
 
+    // Hide subnavs so that we can accordion them later
     $('ul.sidr-class-sub-menu').hide();
 
-    $('li.sidr-class-menu-item-has-children').click(function(e){
-      // e.preventDefault();
-      // $(this).toggleClass('open');
-      $(this).children('.sidr-class-sub-menu').slideToggle();
+    //Save the location of the first li and link that has children
+    $topLink = $('.sidr-inner ul.sidr-class-menu > li.sidr-class-menu-item-has-children > a');
+
+    //Add a 'button' to just after the link in any top level li that has children
+    $('<span class="open"> + </span>').insertAfter($topLink);
+    
+    //Now we get all of the peices together
+
+    //1 Create a counter to act as a toggle, we will be setting this counter to 1, then back to 
+    //  zero with each click
+    $openCnt = 0;
+
+    $('.open').click(function(e){
+      //Increment our counter
+      $openCnt++;
+
+      //Perform an action on our submenus based on the counter value,
+      //setting back to 0 each 'even' numbered click
+      if($openCnt == 1){
+        $(this).next('.sidr-class-sub-menu').slideDown();
+        $(this).html(' &mdash; ');
+      }else{
+        $(this).next('.sidr-class-sub-menu').slideUp();
+        $(this).html(' + ');
+        $openCnt = 0;
+      }
    });
 
 //$('.searchandfilter .sf-field-search').append('<sup class="input-label">Search title, region, year, amount, or grant description</sup>');

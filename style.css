@@ -1309,22 +1309,34 @@ header {
   box-shadow: inset 2px 0px 5px #999;
 }
 
-/* line 465, sass/modules/_header.scss */
+/* line 464, sass/modules/_header.scss */
+.open {
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+/* line 473, sass/modules/_header.scss */
+.sidr-inner .sidr-class-sidr-trigger {
+  display: none;
+}
+/* line 476, sass/modules/_header.scss */
 .sidr-inner ul {
   margin: 0;
 }
-/* line 468, sass/modules/_header.scss */
+/* line 479, sass/modules/_header.scss */
 .sidr-inner li {
   list-style: none;
   margin: 0;
   border-top: 1px solid gray;
   padding-top: 20px;
 }
-/* line 473, sass/modules/_header.scss */
+/* line 484, sass/modules/_header.scss */
 .sidr-inner li:last-of-type {
   border-bottom: 1px solid gray;
 }
-/* line 476, sass/modules/_header.scss */
+/* line 487, sass/modules/_header.scss */
 .sidr-inner li a {
   font-family: helvetica, arial, sans-serif;
   font-weight: bold;
@@ -1336,23 +1348,15 @@ header {
   color: #655b52;
   font-size: 1.2rem;
 }
-/* line 489, sass/modules/_header.scss */
-.sidr-inner li.sidr-class-menu-item-has-children > a::after {
-  content: " +";
-}
-/* line 496, sass/modules/_header.scss */
+/* line 507, sass/modules/_header.scss */
 .sidr-inner li.sidr-class-menu-item-has-children ul.sidr-class-sub-menu li {
   padding: 0px;
 }
-/* line 498, sass/modules/_header.scss */
+/* line 509, sass/modules/_header.scss */
 .sidr-inner li.sidr-class-menu-item-has-children ul.sidr-class-sub-menu li a {
   display: block;
   padding: 20px 0px 20px 40px;
   margin: 0px;
-}
-/* line 502, sass/modules/_header.scss */
-.sidr-inner li.sidr-class-menu-item-has-children ul.sidr-class-sub-menu li a::before {
-  content: "- ";
 }
 
 /*SUBNAV MENUS*/

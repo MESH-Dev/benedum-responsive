@@ -461,7 +461,18 @@ header{
 	box-shadow: inset 2px 0px 5px #999;
 }
 
+.open{
+	cursor:pointer;
+	font-family: $helvetica;
+	font-weight:700;
+	font-size:1.5em;
+	
+}
+
 .sidr-inner{
+	.sidr-class-sidr-trigger{
+		display:none;
+	}
 	ul{
 		margin: 0;
 	}
@@ -486,9 +497,9 @@ header{
 		}
 		&.sidr-class-menu-item-has-children{
 			> a{
-				&::after{
-					content: ' +'
-				}
+				// &::after{
+				// 	content: ' +'
+				// }
 			}
 			ul{
 				&.sidr-class-sub-menu{
@@ -499,9 +510,9 @@ header{
 							display: block;
 							padding: 20px 0px 20px 40px;
 							margin: 0px;
-							&::before{
-								content: '- '
-							}
+							// &::before{
+							// 	content: '- '
+							// }
 						}
 					}
 				}
