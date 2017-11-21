@@ -49,18 +49,19 @@ header{
 	}
 	.search-container{
 		position: absolute;
-		right:40px;
-		width:200px;
+		right:20px;
+		width:210px;
 		border-bottom: 1px solid $light-grey;
 		@media only screen and ($bp-smaller-than-tablet){
 			right:1.5em;
 			//left:15px;
 		}
-		@media screen and ($bp-smaller-than-phablet){
+		@media screen and ($bp-smaller-than-mobile){
 			right: 0;
 			top: 80px;
 			width: 100%;
 			border: none;
+			text-align:center;
 			form#searchform{
 				border-bottom: 1px solid $light-grey;
 				display: inline-block;
@@ -466,7 +467,7 @@ header{
 	font-family: $helvetica;
 	font-weight:700;
 	font-size:1.5em;
-	
+
 }
 
 .sidr-inner{
