@@ -9,7 +9,7 @@ jQuery(document).ready(function($){
 
   		 dots: false,
   		 autoplay: true,
-  		autoplaySpeed: 2000,
+  		autoplaySpeed: 6000,
 	 infinite: true,
 	  speed: 6000,
 	  slidesToShow: 1,
@@ -21,7 +21,7 @@ jQuery(document).ready(function($){
          settings: {
             dots: false,
             autoplay: true,
-            autoplaySpeed: 2000,
+            //autoplaySpeed: 2000,
             infinite: true,
             //speed: 1000,
             slidesToShow: 1,
