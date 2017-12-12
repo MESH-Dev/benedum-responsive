@@ -11,7 +11,7 @@ jQuery(document).ready(function($){
   		 autoplay: true,
   		autoplaySpeed: 2000,
 	 infinite: true,
-	  speed: 2000,
+	  speed: 6000,
 	  slidesToShow: 1,
 	  fade: true,
   	cssEase: 'ease-in-out',

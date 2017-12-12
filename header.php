@@ -7,11 +7,17 @@
 <head>
 
 	<meta charset="utf-8">
-	<title><?php bloginfo('name'); ?></title>
+	<title><?php bloginfo('name'); ?> <?php if(!is_front_page()){ echo ' | ' . get_the_title(); } ?></title>
 
 	<!-- Meta / og: tags -->
 	<meta name="description" content="">
 	<meta name="author" content="">
+
+	<!-- Search engine authorizations -->
+	<!-- //Bing -->
+	<meta name="msvalidate.01" content="2769E9F62BF3F327ED3BF080893E4271" />
+	<!-- //Google -->
+	<meta name="google-site-verification" content="XfJubRu_uuq5ncY6ioy8hikvFQMgywFzDVjzk4gB_0Y" />
 
 	<!-- Mobile Specific Metas
 	================================================== -->
