@@ -11,7 +11,7 @@
 
 	<!-- Meta / og: tags -->
 	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="author" content="meshdesign.com">
 
 	<!-- Search engine authorizations -->
 	<!-- //Bing -->
